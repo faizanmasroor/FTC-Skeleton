@@ -1,6 +1,8 @@
-package org.firstinspires.ftc.teamcode.hardware.base;
+package org.firstinspires.ftc.teamcode.hardware.templates;
 
 import com.qualcomm.robotcore.hardware.HardwareMap;
+
+import org.firstinspires.ftc.teamcode.hardware.base.Servo;
 
 import java.util.EnumMap;
 

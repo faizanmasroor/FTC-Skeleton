@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.hardware.base;
+package org.firstinspires.ftc.teamcode.hardware.templates;
 
 import androidx.annotation.NonNull;
 
@@ -9,6 +9,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.Range;
 
 import org.firstinspires.ftc.teamcode.Utils;
+import org.firstinspires.ftc.teamcode.hardware.base.MotorPair;
 
 public abstract class Extendo extends MotorPair
 {

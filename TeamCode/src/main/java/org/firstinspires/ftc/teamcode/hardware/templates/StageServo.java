@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.hardware.base;
+package org.firstinspires.ftc.teamcode.hardware.templates;
 
 import java.util.EnumMap;
 
