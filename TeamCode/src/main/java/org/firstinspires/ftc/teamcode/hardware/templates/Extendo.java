@@ -25,16 +25,25 @@ public abstract class Extendo extends MotorPair
     public final double k; // a constant that adjusts the steepness of the curve
     public final double positionErrorTolerance;
 
-    public Extendo(HardwareMap hardwareMap, String leftMotorName, String rightMotorName,
-                   int minPosition, int maxPosition,
-                   double minPower, double maxPower,
-                   double k,
-                   double p,
-                   double i,
-                   double d,
-                   double f,
-                   double positionErrorTolerance,
-                   double gravityFeedforward)
+    public Extendo(
+            HardwareMap hardwareMap,
+            String leftMotorName,
+            String rightMotorName,
+
+            double gravityFeedforward,
+
+            int minPosition,
+            int maxPosition,
+            double minPower,
+            double maxPower,
+            double k,
+            double positionErrorTolerance,
+
+            double p,
+            double i,
+            double d,
+            double f
+    )
     {
         super(hardwareMap, leftMotorName, rightMotorName);
 
