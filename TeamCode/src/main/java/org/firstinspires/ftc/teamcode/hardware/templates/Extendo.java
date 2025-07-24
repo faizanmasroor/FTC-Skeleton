@@ -59,23 +59,23 @@ public abstract class Extendo extends MotorPair
         controller = new PIDFController(p, i, d, f);
         controller.setTolerance(positionErrorTolerance);
 
-        Utils.verify(
+        Utils.validate(
                 minPosition < maxPosition,
                 "minPosition must be less than maxPosition."
         );
-        Utils.verify(
+        Utils.validate(
                 minPower > 0 && minPower < 1,
                 "minPower must be greater than 0 but less than 1."
         );
-        Utils.verify(
+        Utils.validate(
                 maxPower > 0 && maxPower < 1,
                 "maxPower must be greater than 0 but less than 1."
         );
-        Utils.verify(
+        Utils.validate(
                 minPower <= maxPower,
                 "minPower must be less than or equal to maxPower."
         );
-        Utils.verify(
+        Utils.validate(
                 maxPosition > 0,
                 "maxPosition must be positive."
         );
@@ -124,11 +124,11 @@ public abstract class Extendo extends MotorPair
 
     public double calculatePIDFControllerPower(int targetPosition)
     {
-        Utils.verify(
+        Utils.validate(
                 targetPosition >= minPosition,
                 "targetPosition must be greater than or equal to minPosition."
         );
-        Utils.verify(
+        Utils.validate(
                 targetPosition <= maxPosition,
                 "targetPosition must be less than or equal to maxPosition."
         );

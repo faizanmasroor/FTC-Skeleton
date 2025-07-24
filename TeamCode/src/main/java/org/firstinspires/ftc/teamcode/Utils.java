@@ -10,7 +10,7 @@ public final class Utils
 {
     private Utils() {}
 
-    public static void verify(boolean condition, String message) throws RuntimeException
+    public static void validate(boolean condition, String message) throws RuntimeException
     {
         if (!condition) throw new RuntimeException(message);
     }
